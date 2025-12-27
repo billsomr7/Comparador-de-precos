@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparador de Preços</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Comparador de Preços</h1>
+    <p>Encontre o menor preço antes de comprar</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Cadastrar Oferta</h2>
+
+      <form id="offer-form">
+        <input type="text" id="product" placeholder="Produto" required>
+        <input type="text" id="store" placeholder="Loja" required>
+        <input type="number" id="price" placeholder="Preço" required step="0.01">
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="result-section">
+      <h2>Ofertas</h2>
+      <ul id="offer-list"></ul>
+      <p id="best-price"></p>
+    </section>
+
+    <section class="api-section">
+      <h2>Produtos da API</h2>
+      <button id="load-api">Carregar Produtos</button>
+      <ul id="api-products"></ul>
+    </section>
+  </main>
+
+  <script src="./script.js/storage.js"></script>
+  <script src="./script.js/utils.js"></script>
+  <script src="./script.js/api.js"></script>
+  <script src="./script.js/app.js"></script>
+</body>
+</html>
